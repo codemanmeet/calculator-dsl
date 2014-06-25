@@ -3,7 +3,7 @@ attr_accessor :total
 	def calculate(&block)
 		self.total = 0
 		instance_eval(&block)
-		puts self.total
+		puts total
 	end
 
 	def add(number)
