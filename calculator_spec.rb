@@ -67,12 +67,12 @@ end
     end
 
     it "should raise divide by zero error" do
-        expect(
+        expect{
         calculate do
           add 5
           divide 0
         end
-        ).to raise_error(ZeroDivisionError)
+        }.to raise_error(ZeroDivisionError)
     end
   end
  
